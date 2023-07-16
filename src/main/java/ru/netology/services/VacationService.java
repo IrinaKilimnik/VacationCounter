@@ -1,7 +1,7 @@
 package ru.netology.services;
 
 public class VacationService {
-    public int calculate (int income, int expenses, int threshold) {
+    public int calculate(int income, int expenses, int threshold) {
         int wallet = 0;
         int counter = 0;
 
@@ -10,10 +10,9 @@ public class VacationService {
             if (wallet >= threshold) {
                 // отдыхать
                 wallet = wallet - expenses;  // wallet -= expenses;
-                wallet = wallet/3;           // wallet /=3;
+                wallet = wallet / 3;           // wallet /=3;
                 counter++;
-            }
-            else {
+            } else {
                 // работать
                 wallet = wallet + income;   // wallet += income;
                 wallet = wallet - expenses;  // wallet -= expenses;
